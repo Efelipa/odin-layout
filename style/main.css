@@ -1,0 +1,35 @@
+:root {
+    --background-dark: #1f2937;
+    --font-color: #f9faf8;
+    --font-bolder: bolder;
+    --size-hero: 48px;
+    --size-hero-secondary: 18px;
+    --header-logo-font: 24px;
+    --action-background: #3882f6;
+    --info-text-color: #1f2937;
+    --info-size: 36px;
+    --quote-background: #e5e7eb;
+    --quote-text: #1f2937;
+    --quote-family: italic;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+.dark-bg {
+    background: var(--background-dark);
+    color: var(--font-color);
+}
+.container {
+    width: 80%;
+}
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
