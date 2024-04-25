@@ -10,7 +10,7 @@
     --info-size: 36px;
     --quote-background: #e5e7eb;
     --quote-text: #1f2937;
-    --quote-family: italic;
+    --quote-style: italic;
 }
 * {
     margin: 0;
@@ -24,6 +24,9 @@ body {
 .dark-bg {
     background: var(--background-dark);
     color: var(--font-color);
+}
+.grey-bg {
+    background: var(--quote-background);
 }
 .container {
     width: 80%;
@@ -39,6 +42,9 @@ body {
 }
 .justify-between {
     justify-content: space-between;
+}
+.align-center {
+    align-items: center;
 }
 #navigation {
     padding: 10px 0;
@@ -62,17 +68,103 @@ body {
     padding: 20px 0;
     gap: 20px;
     height: 400px;
+    flex-flow: row wrap;
 }
 .hero-text {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    flex: 1;
 }
 .hero-img {
     align-self: center;
-    height: 50%;
+    height: 60%;
     width: 50%;
+    flex: 1;
 }
 .title {
     font-size: var(--size-hero);
+}
+.hero-paragraph {
+    color: var(--quote-background);
+}
+.hero-button {
+    background: var(--action-background);
+    border: none;
+    border-radius: 5px;
+    color: var(--font-color);
+    font-size: var(--size-hero-secondary);
+    font-weight: var(--font-bolder);
+    padding: 10px 10px;
+    margin-top: 10px;
+    width: 20%;
+}
+#random {
+    margin-block: 40px;
+    padding: 30px 0;
+    justify-self: center;
+}
+.random-info {
+    color: var(--background-dark);
+    font-size: var(--info-size);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cards {
+    gap: 10px;
+    padding: 30px 15px;
+}
+.card-img {
+    width: 100%;
+    border-radius: 10px;
+}
+.random-text {
+    color: var(--quote-text);
+    text-align: center;
+}
+#quote {
+    display: flex;
+    flex-flow: column wrap;
+    margin-block: 30px;
+    padding-block: 20px;
+}
+.quote-text {
+    color: var(--quote-text);
+    font-style: var(--quote-style);
+    font-size: var(--info-size);
+    font-weight: 100;
+    text-align: justify;
+}
+.quote-name {
+    text-align: end;
+    font-weight: var(--font-bolder);
+    font-size: var(--header-logo-font);
+}
+#modal-content {
+    margin-block: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal {
+    background: var(--action-background);
+    border-radius: 10px;
+    color: var(--font-color);
+    margin: 100px 20px;
+    padding: 20px 0;
+    width: 85%;
+}
+.modal-text p{
+    color: var(--quote-background);
+}
+.modal-button {
+    background: transparent;
+    border: 2px solid var(--font-color);
+    border-radius: 5px;
+    color: var(--font-color);
+    padding: 0px 15px;
+    cursor: pointer;
+    font-weight: var(--font-bolder);
+}
+#footer {
+    padding: 20px;
 }
